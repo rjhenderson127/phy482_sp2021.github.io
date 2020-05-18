@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/05-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+Inside this resistor setup, what can you conclude about the current density $\mathbf{J}$ near the side walls (in steady state)?
+
+&lt;img src="./images/shaped_resistor.png" align="center" style="width: 600px";/&gt;
+
+
+1. Must be exactly parallel to the wall
+2. Must be exactly perpendicular to the wall
+3. Could have a mix of parallel and perp components
+4. No obvious way to decide!?
+
+Note:
+* Correct Answer: A (otherwise current leaks out or there's accumulation!)
+
+</section>
+
+<section data-markdown="">
+
+&lt;img src="./images/career_networking.png" align="center" style="width: 1000px";/&gt;
+
+
+</section>
+
+<section data-markdown="">
+
+**Activity:** Consider two spheres (radii $a$ and $b$ with $b$&gt;$a$) that are constructed so that the larger one surrounds the smaller one. Between them is a material with conductivity $\sigma$. A potential difference of $V$ is maintained between them with the inner sphere at higher potential.
+
+* What is the current $I$ flowing between the spheres in terms of the known variables?
+* How does your result relate to Ohm's Law?
+
+Hint: Assume a uniform charge $+Q$ distributed over the inner sphere and use Gauss' Law to find $\mathbf{E}$.
+
+</section>
+
+<section data-markdown="">
+
+Recall the machined copper from last class, with steady current flowing left to right through it
+
+&lt;img src="./images/machined_copper_2.png" align="center" style="width: 600px";/&gt;
+
+In the "necking down region" (somewhere in a small-ish region around the head of the arrow), do you think
+
+1. $\nabla \cdot \mathbf{E} = 0$
+2. $\nabla \cdot \mathbf{E} \neq 0$
+
+Note:
+* Correct Answer: A
+
+</section>
+
+<section data-markdown="">
+
+Recall the machined copper from last class, with steady current flowing left to right through it
+
+&lt;img src="./images/machined_copper_2.png" align="center" style="width: 600px";/&gt;
+
+In steady state, do you expect there will be any surface charge accumulated anywhere on the walls of the conductor?
+
+1. Yes
+2. No
+
+Note:
+* Correct Answer: A
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

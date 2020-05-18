@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/22-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+The electric fields of two EM waves in vacuum are both described by:
+
+$$\mathbf{E} = E_0 \sin(kx-\omega t)\hat{y}$$
+
+The "wave number" $k$ of wave 1 is larger than that of wave 2, $k_1 &gt; k_2$. Which wave has the larger frequency $f$?
+
+1. Wave 1
+2. Wave 2
+3. impossible to tell
+
+Note:
+* Correct Answer: A
+* Same speed and thus wavelength of 1 is smaller, so frequency is higher
+
+</section>
+
+<section data-markdown="">
+For a wave on a 1d string that hits a boundary between 2 strings of different material we get,
+
+$$\widetilde{f}(z&lt;0) = \widetilde{A}_I e^{i(k_1)z-\omega t} + \widetilde{A}_Re^{i(-k_1z-\omega t)}$$
+$$\widetilde{f}(z&gt;0) = \widetilde{A}_T e^{i(k_2)z-\omega t}$$
+
+where continuity (BCs) give,
+
+$$\widetilde{A}_R = \left(\dfrac{k_1-k_2}{k_1+k_2}\right)\widetilde{A}_I$$
+$$\widetilde{A}_T = \left(\dfrac{2k_1}{k_1+k_2}\right)\widetilde{A}_I$$
+
+Is the transmitted wave in phase with the incident wave?
+
+A) Yes, always B) No, never C) Depends
+
+Note:
+* Correct answer: A
+
+</section>
+
+<section data-markdown="">
+For a wave on a 1d string that hits a boundary between 2 strings of different material we get,
+
+$$\widetilde{f}(z&lt;0) = \widetilde{A}_I e^{i(k_1)z-\omega t} + \widetilde{A}_Re^{i(-k_1z-\omega t)}$$
+$$\widetilde{f}(z&gt;0) = \widetilde{A}_T e^{i(k_2)z-\omega t}$$
+
+where continuity (BCs) give,
+
+$$\widetilde{A}_R = \left(\dfrac{k_1-k_2}{k_1+k_2}\right)\widetilde{A}_I$$
+$$\widetilde{A}_T = \left(\dfrac{2k_1}{k_1+k_2}\right)\widetilde{A}_I$$
+
+Is the reflected wave in phase with the incident wave?
+
+A) Yes, always B) No, never C) Depends
+
+Note:
+* Correct answer: C
+* Can be 180 out of phase
+
+</section>
+
+<section data-markdown="">
+
+An electromagnetic plane wave propagates to the right.  Four vertical antennas are labeled 1-4. 1, 2, and 3 lie in the $x-y$ plane.  1, 2, and 4 have the same $x$-coordinate, but antenna 4 is located further out in the $z$-direction.
+Rank the time-averaged signals received by each antenna.
+
+&lt;img src="./images/EM_waves_antenna.png" align="right" style="width: 700px";/&gt;
+
+1. 1=2=3$&gt;$4
+2. 3$&gt;$2$&gt;$1=4
+3. 1=2=4$&gt;$3
+4. 1=2=3=4
+5. 3$&gt;$1=2=4
+
+Note:
+* Correct Answer: D
+
+</section>
+
+<section data-markdown="">
+
+A point source of radiation emits power $P_0$ isotropically (uniformly in all directions).  A detector of area $a_d$ is located a distance $R$ away from the source.  What is the power $P_d$ received by the detector?
+
+&lt;img src="./images/detector_spherical.png" align="right" style="width: 300px";/&gt;
+
+
+1. $\frac{P_0}{4\pi R^2}a_d$
+2. $P_0\frac{a_d^2}{R^2}$
+3. $P_0\frac{a_d}{R}$
+4. $\frac{P_0}{\pi R^2}a_d$
+5. None of these
+
+Note:
+* Correct Answer: A
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

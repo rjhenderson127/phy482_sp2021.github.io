@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/29-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+Virtual Clicker
+
+https://pollev.com/dannycaballe980
+
+Notes for today
+
+http://dannycaballero.info/phy482msu_s2020/notes/29-slides.html
+
+</section>
+
+<section data-markdown="">
+
+**True or False:** EM Waves can have velocities higher than $c$.
+
+1. True
+2. False
+3. I don't know what to believe anymore
+
+Note:
+* Correct answer: A
+
+</section>
+
+<section data-markdown="">
+
+Fourier tells us that we can write a "pulse" by summing up sinusoidal functions:
+
+$f(x) = \int_{-\infty}^{\infty} a(k)e^{ikx}dk$
+
+If we were to compute $f(x) = \int_{-\infty}^{\infty} a(k)e^{ik(x-vt)}dk$ where $v$ is a known constant, what would we get?
+
+1. $f(x)$
+2. $f(vt)$
+3. $f(x-vt)$
+4. Something complicated!
+5. ???
+
+Note:
+* Correct Answer: C
+
+</section>
+
+<section data-markdown="">
+
+Fourier tells us that we can write a "pulse" by summing up sinusoidal functions:
+
+$f(x) = \int_{-\infty}^{\infty} a(k)e^{ikx}dk$
+
+If we were to compute $f(x) = \int_{-\infty}^{\infty} a(k)e^{ik(x-v(k)t)}dk$ where $v(k)$ is function, what would we get?
+
+1. $f(x)$
+2. $f(vt)$
+3. $f(x-vt)$
+4. Something more complicated!
+5. ???
+
+Note:
+* Correct Answer: D
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

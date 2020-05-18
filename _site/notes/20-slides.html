@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/20-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+I feel confident with one-dimensional waves:
+
+1. Yes
+2. Sort of
+3. Not really
+4. Nope
+
+
+</section>
+
+<section data-markdown="">
+
+### Quiz 4 (Friday Feb. 28)
+
+* Maxwell Ampere + Poynting Vector
+  * Determine the electric and magnetic field in a situation where there is a displacement current
+  * Discuss the direction of the Poynting vector and how it relates to conservation of energy
+
+### Papers
+
+* Due next Friday (Feb. 28) by 5pm (20% of your grade BTW)
+
+</section>
+
+<section data-markdown="">
+
+A function, $f(x,t)$, satisfies this PDE:
+
+$$\dfrac{\partial^2 f}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 f}{\partial t^2}$$
+
+Which of the following functions work?
+
+1. $\sin( k(x – vt))$
+2. $exp( k(-x – vt ))$
+3. $a( x + vt )^3$
+4. All of these.
+5. None of these.
+
+Note:
+* Correct Answer: D
+
+
+</section>
+
+<section data-markdown="">
+
+A "right moving" solution to the wave equation is:
+
+$$ f_R(z,t) = A \cos(kz – \omega t + \delta)$$
+
+Which of these do you prefer for a "left moving" soln?
+
+1. $f_L(z,t) = A \cos(kz + \omega t + \delta)$
+2. $f_L(z,t) = A \cos(kz + \omega t - \delta)$
+3. $f_L(z,t) = A \cos(-kz – \omega t + \delta)$
+4. $f_L(z,t) = A \cos(-kz – \omega t - \delta)$
+5. more than one of these!
+
+(Assume $k, \omega, \delta$ are positive quantities)
+
+Note:
+* All of them could be because cos(x) = cos(-x)
+
+</section>
+
+<section data-markdown="">
+
+Two different functions $f_1(x,t)$ and $f_2(x,t)$ are solutions of the wave equation.
+
+$$\dfrac{\partial^2 f}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 f}{\partial t^2}$$
+
+Is $(A f_1  + B f_2 )$  also a solution of the wave equation?
+
+1. Yes, always
+2. No, never
+3. Yes, sometimes depending on $f_1$ and $f_2$
+
+Note:
+* Correct answer: A
+
+
+</section>
+
+<section data-markdown="">
+
+Two traveling waves 1 and 2 are described by the equations:
+
+$$y_1(x,t)  = 2 \sin(2x – t)$$
+$$y_2(x,t)  =  4 \sin(x – 0.8 t)$$
+
+All the numbers are in the appropriate SI (mks) units.
+ 
+Which wave has the higher speed?
+1. 1
+2. 2
+3. Both have the same speed
+
+Note:
+* Correct Answer: B
+
+</section>
+
+<section data-markdown="">
+Two impulse waves are approaching each other, as shown.  Which picture correctly shows the total wave when the two waves are passing through each other?
+
+&lt;img src="./images/two_waves.png" align="center" style="width: 400px";/&gt;
+
+Note:
+* Correct Answer: D
+
+
+</section>
+
+<section data-markdown="">
+
+A solution to the wave equation is:
+$$f(z,t) = A \cos(kz – \omega t + \delta)$$
+
+* What is the speed of this wave?
+* Which way is it moving?
+* If $\delta$ is small (and &gt;0), is this wave "delayed" or "advanced"?
+* What is the frequency?
+* The angular frequency?
+* The wavelength?
+* The wave number?
+
+
+</section>
+
+<section data-markdown="">
+
+A solution to the wave equation is:
+$$f(z,t) = Re\left[A e^{i(kz – \omega t + \delta)}\right]$$
+
+* What is the speed of this wave?
+* Which way is it moving?
+* If $\delta$ is small (and &gt;0), is this wave "delayed" or "advanced"?
+* What is the frequency?
+* The angular frequency?
+* The wavelength?
+* The wave number?
+
+
+</section>
+
+<section data-markdown="">
+
+A complex solution to the wave equation in 3D is:
+
+$$\widetilde{f}(\mathbf{r},t) = \widetilde{A}e^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)}$$
+
+
+* What is the speed of this wave?
+* Which way is it moving?
+* Why is there no $\delta$?
+* What is the frequency?
+* The angular frequency?
+* The wavelength?
+* The wave number?
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

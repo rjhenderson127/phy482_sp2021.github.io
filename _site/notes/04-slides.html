@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/04-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+In the interior of a metal in static equilibrium the charge density $\rho$ is:
+
+1. zero always.
+2. never zero.
+3. sometimes zero, sometime non-zero, depending on the conditions.
+
+
+Note:
+* Correct Answer: A
+</section>
+
+<section data-markdown="">
+
+## Announcements
+
+* Project homework is being graded (will finish tonight)
+  * Use GitHub Desktop to sync for feedback
+  * Quite a few empty repositories...
+    * Please come see me ASAP if you need help with GitHub
+* Homework 2 posted; due Friday
+
+</section>
+
+<section data-markdown="">
+
+## MOAR Announcements
+
+* Quiz 1 on Friday (CU-WIP folks Thursday)
+  * Last 20 minutes of class
+  * No cheat sheets; all formulas will be provided
+  * Solve a Gauss' Law Problem with spherical symmetry
+  * Sketch a graph of the resulting electric field
+
+* Help session starts this week
+  * 3-5pm (6pm?) in Help Room (Strosacker Center)
+
+</section>
+
+<section data-markdown="">
+
+## Even MOAR
+
+* Procedure for tunring in paper HW
+  * Solve one problem per page(s) (full problem not parts)
+  * Scan as Black and White PDF (photos vary in quality; mobile apps can do this)
+  * We will grade at problem level (fewer uploads)
+
+</section>
+
+<section data-markdown="">
+
+Which of the following is a correct statement of charge conservation?
+
+1. $\frac{dQ_{enc}}{dt} = -\int \mathbf{J}\cdot d\mathbf{l}$
+2. $\frac{dQ_{enc}}{dt} = -\int \mathbf{J}\cdot d\mathbf{A}$
+3. $\frac{dQ_{enc}}{dt} = -\int \nabla \cdot \mathbf{J}\,d\tau$
+4. $\frac{dQ_{enc}}{dt} = -\nabla \cdot \mathbf{J}$
+5. None of these or *more* than one of these
+
+Note:
+* Correct Answer: E (it's B and C; connected by divergence theorem)
+</section>
+
+<section data-markdown="">
+
+For everyday currents in home electronics and wires, which answer is the order of magnitude of the instantaneous speed of the electrons in the wire?
+
+1. more than km/s
+2. m/s
+3. mm/s
+4. $\mu$m/s
+5. nm/s
+
+
+Note:
+* Correct Answer: A - using kT = 1/40 eV
+</section>
+
+<section data-markdown="">
+
+An electric current $I$ flows along a copper wire (low resistivity) into a resistor made of carbon (high resistivity) then back into another copper wire. In which material is the electric field largest?
+
+
+&lt;img src="./images/simple_resistor.png" align="center" style="width: 600px";/&gt;
+
+1. In the copper wire
+2. In the carbon resistor
+3. It's the same in both copper and carbon
+4. It depends on the sizes of the copper and carbon
+
+Note:
+* Correct Answer: D, normally B, but it will depend on the relative sizes (if the wire gets really small!)
+
+</section>
+
+<section data-markdown="">
+
+**Activity**: A copper cylinder is machined to have the following shape.  The ends are connected to a battery so that a current flows through the copper.
+
+&lt;img src="./images/machined_copper.png" align="center" style="width: 500px";/&gt;
+
+Rank order (from greatest to smallest, e.g. A=C&gt;B)
+
+Magnitude of E field, Conductivity, Current, &amp; Current Density
+
+
+</section>
+
+<section data-markdown="">
+
+Inside this resistor setup, (real world, finite sizes!) What does the E field look like inside ?
+
+&lt;img src="./images/simple_resistor_2.png" align="center" style="width: 600px";/&gt;
+
+
+1. Must be uniform and horizontal
+2. Must have some nonuniformity, due to fringing effects!
+
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

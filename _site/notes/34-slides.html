@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/34-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+The displacement between two events $\Delta x^{\mu}$ is a contravariant 4-vector.
+
+Is $\Delta x^{\mu}/\Delta t$ also a 4-vector (where $\Delta t$ is the time between in events in some frame)?
+
+1. Yes
+2. No
+
+Note:
+* Correct Answer: B
+
+</section>
+
+<section data-markdown="">
+
+The displacement between two events $\Delta x^{\mu}$ is a contravariant 4-vector.
+
+Is $\Delta x^{\mu}/\Delta \tau$ also a 4-vector (where $\Delta \tau$ is the proper time)?
+
+1. Yes
+2. No
+
+Note:
+* Correct Answer: A
+
+</section>
+
+<section data-markdown="">
+
+Velocity is a defined quantity:
+
+$$\mathbf{u}=\dfrac{\Delta\mathbf{r}}{\Delta t} = \langle \dfrac{\Delta x}{\Delta t},\dfrac{\Delta y}{\Delta t},\dfrac{\Delta z}{\Delta t}\rangle$$
+
+In another inertial frame, seen to be moving to the right, parallel to x, observers see:
+
+$$\mathbf{u'}=\dfrac{\Delta\mathbf{r'}}{\Delta t'} = \langle \dfrac{\Delta x'}{\Delta t'},\dfrac{\Delta y'}{\Delta t'},\dfrac{\Delta z'}{\Delta t'}\rangle$$
+
+Is velocity a 4-vector?
+1. Yes
+2. No
+
+Note:
+* Correct answer: B
+</section>
+
+<section data-markdown="">
+
+Which of the following equations is the correct way to write out the Lorentz scalar product?
+
+1. $a \cdot b = -a^0b^0 + a^1b^1 + a^2b^2 + a^3b^3$
+2. $a \cdot b = a_0b^0 + a_1b^1 + a_2b^2 + a_3b^3$
+3. $a \cdot b = a_{\nu}b^{\nu}$
+4. None of these
+5. All three are correct
+
+Note:
+* Correct Answer: E
+
+</section>
+
+<section data-markdown="">
+
+Imagine this quantity:
+
+$$u^{\mu} \equiv \begin{pmatrix}c\\\ \frac{\Delta x}{\Delta t}\\\ \frac{\Delta y}{\Delta t}\\\ \frac{\Delta z}{\Delta t}\end{pmatrix}
+$$
+
+Is this quantity a 4-vector?
+
+1. Yes, and I can say why.
+2. No, and I can say why.
+3. None of the above.
+
+Note:
+* Correct answer: B
+</section>
+
+<section data-markdown="">
+
+Imagine this quantity:
+
+$$\eta^{\mu} \equiv \frac{1}{\Delta \tau}\begin{pmatrix}ct\\\ \Delta x\\\ \Delta y\\\ \Delta z\end{pmatrix}
+$$
+
+Is this quantity a 4-vector?
+
+1. Yes, and I can say why.
+2. No, and I can say why.
+3. None of the above.
+
+Note:
+* Correct answer: A
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

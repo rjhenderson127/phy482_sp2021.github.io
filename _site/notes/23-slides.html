@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/23-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+A light rope (small $m/L$) is fused to a heavy rope (large $m/L$). If I wiggle the **light** rope,
+
+1. most of the wiggles are reflected back; very few wiggles transmit through the heavy rope
+2. some of the wiggles are reflected back; some of the wiggles transmit through the heavy rope
+3. very few of the wiggles are reflected back; most of the wiggles transmit through the heavy rope
+4. ???
+
+Note:
+* Correct answer: A
+
+</section>
+
+<section data-markdown="">
+
+A light rope (small $m/L$) is fused to a heavy rope (large $m/L$). If I wiggle the **heavy** rope,
+
+1. most of the wiggles are reflected back; very few wiggles transmit through the light rope
+2. some of the wiggles are reflected back; some of the wiggles transmit through the light rope
+3. very few of the wiggles are reflected back; most of the wiggles transmit through the light rope
+4. ???
+
+Note:
+* Correct answer: B/C
+
+</section>
+
+<section data-markdown="">
+
+How do the speed of the waves compare in the light rope ($v_l$) and heavy rope ($v_H$)?
+
+1. $v_l &lt; v_H$
+2. $v_l = v_H$
+3. $v_l &gt; v_H$
+
+Note:
+* Correct Answer: C
+
+</section>
+
+<section data-markdown="">
+
+In matter we have,
+
+$$\nabla \cdot \mathbf{D} = \rho_f \qquad \nabla \cdot \mathbf{B} = 0$$
+$$\nabla \times \mathbf{E} = -\dfrac{\partial \mathbf{B}}{\partial t} \qquad \nabla \times \mathbf{H} = \mathbf{J}_f + \dfrac{\partial \mathbf{D}}{\partial t}$$
+with
+$$\mathbf{D} = \varepsilon_0 \mathbf{E} + \mathbf{P} \qquad \mathbf{H} = \mathbf{B}/\mu_0 - \mathbf{M}$$
+
+If there are no free charges or current, is $\nabla \cdot \mathbf{E} = 0$?
+
+1. Yes, always
+2. Yes, under certain conditions (what are they?)
+3. No, in general this will not be true
+4. ??
+
+Note:
+* Correct answer: B
+</section>
+
+<section data-markdown="">
+
+In linear dielectrics, $\mathbf{D} = \varepsilon_0\mathbf{E} + \mathbf{P} = \varepsilon \mathbf{E}.$ In a linear dielectric is $\varepsilon &gt; \varepsilon_0$?
+
+1. Yes, always
+2. No, never
+3. Sometimes, it depends on the details of the dielectric.
+
+Note:
+* Correct answer: A
+
+</section>
+
+<section data-markdown="">
+
+In a non-magnetic, linear dielectric,
+
+$$v = \dfrac{1}{\sqrt{\mu \varepsilon}} = \dfrac{1}{\sqrt{\mu \varepsilon_r \varepsilon_0}} = \dfrac{c}{\sqrt{\varepsilon_r}}$$
+
+How does $v$ compare to $c$?
+
+1. $v&gt;c$ always
+2. $v&lt;c$ always
+3. It depends
+
+Note:
+* Correct Answer: B
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

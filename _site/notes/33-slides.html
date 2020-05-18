@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Physics 482
+      
+    </title>
+
+    <meta name="author" content="" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Website for Physics 482 - Electricity and Magnetism II at Michigan State University
+">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/css/theme/white.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/phy482msu_s2020/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/phy482msu_s2020/reveal.js/css/print/pdf.css' : '/phy482msu_s2020/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/phy482msu_s2020/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://localhost:4000/phy482msu_s2020/notes/33-slides.html">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+
+## Announcements
+* What's left?
+  * Quiz 7 (Due Apr. 20)
+  * Homework 13 (Due Apr. 20)
+  * If we finish early, we finish early.
+
+</section>
+
+<section data-markdown="">
+
+With Einstein's velocity addition rule,
+
+$$u = \dfrac{u' + v}{1+\frac{u'v}{c^2}}$$
+
+what happens when $v$ is very small compared to $c$?
+
+1. $u\rightarrow 0$
+2. $u\rightarrow c$
+3. $u\rightarrow \infty$
+4. $u \approx u' + v$
+5. Something else
+
+Note:
+* Correct Answer: D
+* denominator goes to 1 because second term is near zero - get back classical addition
+</section>
+
+<section data-markdown="">
+
+With Einstein's velocity addition rule,
+
+$$u = \dfrac{u' + v}{1+\frac{u'v}{c^2}}$$
+
+what happens when $u'$ is $c$?
+
+1. $u\rightarrow 0$
+2. $u\rightarrow c$
+3. $u\rightarrow \infty$
+4. $u \approx u' + v$
+5. Something else
+
+Note:
+* Correct Answer: B
+* plug it in and you will get c; if something moves with c it does so in every frame - constant speed of light
+</section>
+
+<section data-markdown="">
+
+With Einstein's velocity addition rule,
+
+$$u = \dfrac{u' + v}{1+\frac{u'v}{c^2}}$$
+
+what happens when $v$ is $c$?
+
+1. $u\rightarrow 0$
+2. $u\rightarrow c$
+3. $u\rightarrow \infty$
+4. $u \approx u' + v$
+5. Something else
+
+Note:
+* Correct Answer: B
+* if frame moves at c, all things move at c
+</section>
+
+<section data-markdown="">
+
+I have seen the Einstein summation notation before:
+
+$$\mathbf{a}\cdot\mathbf{b} \equiv a_{\mu}b^{\mu}$$
+
+1. Yes and I'm comfortable with it
+2. Yes, but I'm just a little rusty with it
+3. Yes, but I don't remember it it all
+3. Nope
+
+</section>
+
+<section data-markdown="">
+
+**True or False:** The dot product (in 3 space) is invariant to rotations.
+
+$$\mathbf{a}\cdot\mathbf{b} \equiv a_{\mu}b^{\mu}$$
+
+1. True
+2. False
+3. No idea
+
+Note:
+* Correct answer: A (when Galilean relativity is ok)
+
+</section>
+
+<section data-markdown="">
+
+Displacement is a defined quantity
+
+$$\Delta x^{\mu} \equiv \left(x^{\mu}_A - x^{\mu}_B\right)$$
+
+Is the displacement a contravariant 4-vector?
+
+1. Yes
+2. No
+3. Umm...don't know how to tell
+4. None of these.
+
+**Be ready to explain your answer.**
+
+Note:
+* Correct Answer: A
+
+</section>
+
+<section data-markdown="">
+
+The displacement between two events $\Delta x^{\mu}$ is a contravariant 4-vector.
+
+Is $5 \Delta x^{\mu}$ also a 4-vector?
+
+1. Yes
+2. No
+
+Note:
+* Correct Answer: A
+
+</section>
+
+      </div>
+    </div>
+
+    <script src="/phy482msu_s2020/reveal.js/lib/js/head.min.js"></script>
+    <script src="/phy482msu_s2020/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/phy482msu_s2020/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/phy482msu_s2020/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/phy482msu_s2020/reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
